@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap&subset=cyrillic');
+
+body {
+    font-family: 'Open Sans', Arial;
+}
+
+/*---- Section Header--- */
+.img-logo{
+    width: 70%;
+}
+
+.header__h1{
+    color: #cda49e;
+    font-weight: 400;
+
+}
+/*------ Section Tagline (slogan)------ */
+.section-tagline{
+    background: url('../assets/fon.jpg') no-repeat center top fixed;
+    background-size: cover;
+    padding: 120px 0 200px 0;
+}
+.section-tagline__h2 {
+    color: #4c4c4c;
+    font-style: italic;
+    font-size: 2rem;
+}
