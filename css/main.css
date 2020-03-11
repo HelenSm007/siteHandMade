@@ -27,3 +27,73 @@ body {
     font-style: italic;
     font-size: 2.5rem;
 }
+
+/*-------- Section Photo-gallery -------*/
+.carousel-item {
+    /* max-height: 500px ; */
+    /* height: 50%; */
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon{
+    background-color: #5f5a5ad4;
+    border-radius: 10px;
+    width: 30px;
+    height: 30px;
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev
+{display:flex}
+.carousel-inner .carousel-item-right.active,
+.carousel-inner .carousel-item-next
+{transform:translateX(25%)}
+.carousel-inner .carousel-item-left.active,
+.carousel-inner .carousel-item-prev
+{transform:translateX(-25%)}
+.carousel-inner .carousel-item-right,
+.carousel-inner .carousel-item-left
+{transform:translateX(0)}
+
+
+/*--------- Section Category ----------*/
+.category h2{
+    color: #6f6c6c;
+}
+.article {
+        width: 282px;
+        margin-bottom: 50px;
+}
+
+.article_title {
+	font-size: 20px;
+	background-color: rgba(227,228,229,.8);
+	color: #333;
+	text-transform: uppercase;
+	font-weight: 500;
+	padding: 10px 76px;
+	text-align: center;
+}
+
+.article_img {
+	width: 280px;
+	height: 280px;
+	/* background-color: #c0086c; */
+	background-size: cover;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    border: #565656 1px solid;
+	/* box-shadow: 0 0 10px rgba(0,0,0,0.5); */
+}
+
+.article_img.one {
+	background-image: url('../assets/catalog-img/toys.jpg');
+}
+.article_img.two {
+	background-image: url('../assets/catalog-img/accessories.jpg');
+}
+.article_img.three {
+	background-image: url('../assets/catalog-img/decoration.jpg');
+}
+.article_img.four {
+	background-image: url('../assets/catalog-img/souvenirs.jpg');
+}
