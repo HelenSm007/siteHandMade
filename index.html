@@ -9,12 +9,14 @@
     <!-- OwlCarousel2 CSS Styles -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <!-- Font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Users CSS -->
     <link rel="stylesheet" href="css/main.css">
 
 </head>
 <body>
-   <header class="header">
+   <header class="header" id="top">
        <div class="container">
             <div class="row align-items-center ">
                 <div class="col-md-2">
@@ -26,8 +28,8 @@
                     </h1>
                 </div>
                 <div class="col-md-2">
-                    <nav>
-                        Каталог
+                    <nav >
+                       <a href="#category" class="catalog">Каталог</a> 
                     </nav>
                 </div>
             </div> 
@@ -55,8 +57,9 @@
             </div>
         </div>
     </section>
+    
     <!-- Передбачити кнопку замовити. По якій з'являється форма Надсилання повідомлення для зворотнього зв'язку  -->
-    <section class="category">
+    <section class="category" id="category">
         <div class="container">
             <div class="row justify-content-center">
                 <h2>Категорії</h2>
@@ -67,7 +70,7 @@
                         <div class="article_title">
                             Іграшки
                         </div>
-                        <div class="article_img one">	
+                        <div class="article_img toy">	
                         </div>
                     </div>
                 </div>
@@ -76,7 +79,7 @@
                         <div class="article_title">
                             Аксесуари
                         </div>
-                        <div class="article_img two">	
+                        <div class="article_img accessories">	
                         </div>
                     </div>
                 </div>
@@ -85,7 +88,7 @@
                         <div class="article_title">
                             Прикраси
                         </div>
-                        <div class="article_img three">	
+                        <div class="article_img decoration">	
                         </div>
                     </div>
                 </div>
@@ -94,7 +97,44 @@
                         <div class="article_title">
                             Сувеніри
                         </div>
-                        <div class="article_img four">	
+                        <div class="article_img souvenirs">	
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-xl-3 ">
+                    <div class="article">
+                        <div class="article_title">
+                            Товари для дома
+                        </div>
+                        <div class="article_img household">	
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-3 ">
+                    <div class="article">
+                        <div class="article_title">
+                            Домашнім тваринам
+                        </div>
+                        <div class="article_img pet">	
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-3 ">
+                    <div class="article">
+                        <div class="article_title">
+                            Кулінарія
+                        </div>
+                        <div class="article_img cooking">	
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-3 ">
+                    <div class="article">
+                        <div class="article_title">
+                            ДЕКОРАТИВНІ КВІТИ
+                        </div>
+                        <div class="article_img flowers">	
                         </div>
                     </div>
                 </div>
@@ -105,22 +145,68 @@
 
     <section class="description">
         <div class="container">
-            <p>
-                Блок з описом технології HandMade
-            </p>
+            <div class="row justify-content-center">
+                <h2>
+                    О проекті "Зроблено з любов'ю"
+                </h2>
+            </div>
+            <div class="row">
+                <p>
+                    Вироби ручної роботи завжди високо цінувалися. 
+                    Зроблені своїми руками і виконані на високому професійному рівні, вони служать актуальним подарунком до будь-якого свята.
+                </p>
+                <p>
+                    Часто скромні майстри як і раніше зберігають своє багатство вдома або дарують вузькому колу друзів, навіть не здогадуючись, що завдяки улюбленому хобі вони теж можуть заробляти гроші. 
+                </p>
+                <p>
+                    Інтернет магазин рукоділля "Зроблено з любов'ю"  надає можливість купити та продати вироби ручної роботи майстринь, а також знайти унікальні подарунки Handmade. Цей проект створений для того, щоб надати для майстрів та покупців майданчик для купівлі та продажу своїх виробів.
+                </p>
+            </div>
         </div>
     </section>
 
     <footer class="footer">
         <div class="container">
-            Контакти
-            соц. мережі
-            Зв'язатися з нами
+            <div class="row">
+                <div class="col-md-3 text-center">
+                    <p>
+                        <img src="assets/logo.png" alt="log" width="50px">
+                    </p> 
+                    <p>
+                        HandMade With Love  
+                    </p>
+                    <p>
+                        &copy; Smyrnova 2020
+                    </p>
+                </div>
+                <div class="col-md-6 text-center">
+                    <p>Зв'язатися з нами</p> 
+                    <form action="#" class="cotacts-form">
+                       <input type="text" class="contacts-form__fname" name="firstname" placeholder="Ваше ім'я:">
+        
+                       <input type="email" class="contacts-form__lname" name="lastname" placeholder="Ваш email:">
+                    
+                        <textarea class="contacts-form__message" name="subject" placeholder="Ваше повідомлення" style="height:200px"></textarea>
+                    
+                       <input type="submit" value="Відправити" class="contacts-form__submit" >
+                    </form>
+                </div>
+                <div class="col-md-3">
+                    <p> Ми у соц. мережах</p>  
+                    <div class="icons d-flex">
+                        <a href="#" class="icons__item"><i class="fa fa-twitter"></i></a>
+                        <a href="#" class="icons__item"><i class="fa fa-facebook"></i></a>
+                        <a href="#" class="icons__item"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                     </div>
+                    
+                </div>
+            </div>    
+            
         </div>
     </footer>
-
+    
     <!-- Кнопка "Вгору" -->
-
+    <a href="#top" class="go-top" hidden>Угору</a>
 
 
 
