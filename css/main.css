@@ -24,7 +24,7 @@ h2{
 a.catalog{
     text-decoration: none;
     color: #6f6c6c;
-    transition: all 1s ease-in
+    transition: all 0.5s ease-in
 }
 
 a.catalog:hover{
