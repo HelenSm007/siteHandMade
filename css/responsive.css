@@ -1,0 +1,175 @@
+@media all and (max-width: 576px) {
+    .header {
+        min-height: 150px;
+    }
+
+    .header__h1 {
+        font-size: 0.9rem;
+    }
+
+    /* .photo-gallery img {
+        width: 300px !important;
+    } */
+    .category .article {
+        /* width: 300px; */
+    }
+
+    .description p {
+        padding: 0 10px;
+    }
+    
+    
+}
+/* 
+@media  screen and (min-width: 576px) and (max-width: 768px) {
+}*/
+@media  screen and (max-width: 768px) {
+    .header {
+        min-height: 200px;
+    }
+    
+    .img-logo {
+        max-width: 50px;
+    }
+
+     /* ---- Section contacts ----- */
+     .footer .row .order:nth-child(2)::after,
+     .footer .row .order:nth-child(3)::after{
+         content: "---------------------";
+         margin-bottom: 20px;   /* ?Не применяются??*/ 
+ 
+     }
+     
+     .footer .row .order:nth-child(1) {
+         order: 3;
+     }
+ 
+     .cotacts-form{
+         font-size: 12px;
+     }
+     
+     .contacts-form__fname, 
+     .contacts-form__lname, 
+     .contacts-form__message {
+         width: 100%;
+     }
+}
+/*
+@media  screen and (min-width: 768px) and (max-width: 992px) {
+} */
+
+/* @media only screen and (min-width: 992px) and (max-width: 1200px) { */
+@media screen and (max-width: 992px) {
+    /* скрытие основного меню */
+    .header__menu {
+        display: none;
+    }
+
+ 
+    /* бургер -меню */
+    .header__burger {
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 20px;
+        z-index: 3;
+        margin-left: auto;
+      }
+    
+      .header__burger:after,
+      .header__burger:before {
+        content: "";
+        background: #000;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        left: 0;
+        transition: 0.5s;
+      }
+      
+      .header__burger:after {
+        bottom: 0;
+    
+      }
+      
+      .header__burger:before {
+        top: 0;
+    
+      }
+    
+      .header__burger span {
+        background: #000;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        left: 0;
+        top: 9px;
+        transition: 0.5s;
+      }
+
+      .header__burger.active:before {
+        transform: rotate(45deg);
+        top: 9px;
+      }
+    
+      .header__burger.active:after {
+        transform: rotate(-45deg);
+        bottom: 9px;
+      }
+    
+      .header__burger.active span {
+        transform: scale(0);
+        /*display: none;*/
+      }
+
+      /* ******************* */
+    .header__menu {
+        position: fixed;
+        display: block;
+        visibility: hidden;
+        /*top: 200px;*/
+        top: 0px; /* чтобы скрыть меню*/
+        right:-100%;
+        width: 200px;
+        height: 100%;
+        background-color: #c7b8b8;
+        z-index: 2;
+        padding: 70px 10px 20px 10px;
+        transition: 0.3s;
+    }
+
+    .header__menu.active {
+        right: 0px;
+        visibility: visible;
+    }
+
+    .header__menu a{
+        display: inline-block;
+        padding: 12px 15px;
+    }
+    
+    /* .header_list li {
+        margin: 0 0 20px 0;
+    } */
+    /* Section Contacts */
+    .contacts-form__fname, 
+    .contacts-form__lname, 
+    .contacts-form__message {
+        display: block;
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .icons > a{
+        flex-shrink: 0;
+    }
+
+@media only screen and (min-width: 1200px) {
+    #header .container {
+    margin-bottom: 20px;
+    } 
+        
+    h2 {
+        font-size: 1.5rem;
+    }
+}
