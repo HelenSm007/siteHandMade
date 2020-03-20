@@ -33,26 +33,26 @@
     }
 
      /* ---- Section contacts ----- */
-     .footer .row .order:nth-child(2)::after,
-     .footer .row .order:nth-child(3)::after{
+     .footer .container .order:nth-child(2)::after,
+     .footer .container .order:nth-child(3)::after{
          content: "---------------------";
          margin-bottom: 20px;   /* ?Не применяются??*/ 
  
      }
      
-     .footer .row .order:nth-child(1) {
+     .footer .container .order:nth-child(1) {
          order: 3;
      }
  
-     .cotacts-form{
+     .contacts-form{
          font-size: 12px;
      }
      
-     .contacts-form__fname, 
+     /* .contacts-form__fname, 
      .contacts-form__lname, 
      .contacts-form__message {
          width: 100%;
-     }
+     } */
 }
 /*
 @media  screen and (min-width: 768px) and (max-width: 992px) {
@@ -157,8 +157,8 @@
     .contacts-form__fname, 
     .contacts-form__lname, 
     .contacts-form__message {
-        display: block;
-        width: 100%;
+        /* display: block;
+        width: 100%; */
         font-size: 14px;
     }
 
