@@ -87,12 +87,6 @@ window.addEventListener('scroll', function(){
     anchor.hidden = (this.pageYOffset < document.documentElement.clientHeight)
 });
 
-//Бургер меню
-// $(document).ready(function(){
-//   $('.header_burger').click(function(event) {
-//     $('.header_burger, .header__menu').toggleClass('active')
-//   });
-// });
 
 let header__burger = document.querySelector('.header__burger');
 
