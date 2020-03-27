@@ -1,0 +1,161 @@
+@media all and (max-width: 576px) {
+    .header {
+        min-height: 150px;
+
+        &__h1 {
+            font-size: 0.9rem;
+        }
+    }
+
+    .description p {
+        padding: 0 10px;
+    }
+    
+    
+}
+
+@media  screen and (max-width: 768px) {
+    .header {
+        min-height: 200px;
+    }
+    
+    .img-logo {
+        max-width: 50px;
+    }
+
+     /* ---- Section contacts ----- */
+     .footer .container .order:nth-child(2)::after,
+     .footer .container .order:nth-child(3)::after{
+         content: "---------------------";
+         margin-bottom: 20px;   /* ?Не применяются??*/ 
+ 
+     }
+     
+     .footer .container .order:nth-child(1) {
+         order: 3;
+     }
+ 
+     .contacts-form{
+         font-size: 12px;
+     }
+}
+
+/* @media only screen and (min-width: 992px) and (max-width: 1200px) { */
+@media screen and (max-width: 992px) {
+    /* скрытие основного меню */
+    .header__menu {
+        display: none;
+    }
+
+ 
+    /* бургер -меню */
+    .header__burger {
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 20px;
+        z-index: 3;
+        margin-left: auto;
+        cursor: pointer;
+        
+        &::after, 
+        &::before {
+            content: "";
+            background: #000;
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            left: 0;
+            transition: 0.5s;
+        }
+
+        &::after {
+            bottom: 0;
+        }
+
+        &::before {
+            top: 0;
+        }
+
+        span {
+            background: #000;
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            left: 0;
+            top: 9px;
+            transition: 0.5s;
+        }
+
+        &.active:before {
+            transform: rotate(45deg);
+            top: 9px;
+        }
+
+        &.active:after {
+            transform: rotate(-45deg);
+            bottom: 9px;
+        }
+
+        &.active span {
+            transform: scale(0);
+            /*display: none;*/
+        }
+
+      } //header__burger
+    
+      /* ******** Спрятать меню ********** */
+    .header__menu {
+        position: fixed;
+        display: block;
+        visibility: hidden;
+        /*top: 200px;*/
+        top: 0px; /* чтобы скрыть меню*/
+        right:-100%;
+        width: 200px;
+        height: 100%;
+        background-color: #e4c7c7;
+        /* background-color: #c7b8b8; */
+        z-index: 2;
+        padding: 70px 10px 20px 10px;
+        transition: 0.3s;
+
+        &.active {
+            right: 0px;
+            visibility: visible;
+        }
+
+        a{
+            display: inline-block;
+            padding: 12px 15px;
+        }
+    } //header__menu
+
+    h2 {
+        font-size: 1.5rem;
+        margin: 25px 0 20px 0;
+    }
+    /* Section Contacts */
+    .contacts-form__fname, 
+    .contacts-form__lname, 
+    .contacts-form__message {
+ 
+        font-size: 14px;
+    }
+
+    .icons > a{
+        flex-shrink: 0;
+    }
+}
+
+@media only screen and (max-width: 1200px){
+
+}
+
+@media only screen and (min-width: 1200px) {
+    #header .container {
+        margin-bottom: 20px;
+        
+    } 
+        
+}
